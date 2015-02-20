@@ -1,0 +1,60 @@
+Deadline 15.03.2015
+10-12 pages
+English
+.pdf and source code
+
+---------------------------------------------------------------
+
+Title page:
+	Title, Name, Matrikelnummber, Date, Institut
+
+Table of content:
+	Auto generated
+
+Introduction:
+	Motivation, overview (why/how it's structure this way)
+
+Main part:
+	Short explanation of the practical part (not whole code)
+	Think about structure
+	Keep to main topic of the paragraph
+
+Conclusion/Summary
+
+References
+	Author, Title, Publication year, Publisher
+	For books: wydanie
+	Articles: antologia
+	URLs: release date
+
+---------------------------------------------------------------
+
+Quotations (text, pictures, graphs):
+	Good way to defend your work
+	Way to use work of others
+	If you are not sure quote or not, just do it
+	Mark Your ideas
+	Redrawing/Rewriting is also quoting
+
+	How to:
+		Indirect quotations
+
+		Quoting whole sentence:
+		Sentence [x]. x - number in references
+
+		Refering to other paper:
+		... in <Name/Short description> [x]
+
+	List of figures
+
+Sources of informations:
+	Try to get to the oldest source
+	Find what is common and what is different in the sources
+
+Languages:
+	Formal language
+	Don't explain how to do something, just describe your topic
+
+Structure/Format:
+	1-3 fonts
+	References to pictures/graphs in text

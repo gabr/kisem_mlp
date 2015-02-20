@@ -1,0 +1,18 @@
+Arkadiusz Gabryœ
+20.02.2015
+
+1. Spis rozdzia³ów:
+
+    1. Introduction
+        Bêdê siê stara³ dojœæ do g³ównego tematu t³umacz¹c wszystkie elementy
+        po drodze, ale jakby od koñca. Przedstawiê najpier koñcow¹ definicjê
+        i bêdê w trakcie odwo³ywa³ siê do jej czêœci.
+    2. Neuron
+    3. Model
+    4. Network
+    5. Layers
+    6. MLNN = MLP
+    7. Training
+    8. Observations and Conclusions
+
+

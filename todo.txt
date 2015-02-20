@@ -4,15 +4,26 @@ Arkadiusz Gabryœ
 1. Spis rozdzia³ów:
 
     1. Introduction
+	Motivation, overview (why/how it's structure this way)
+
         Bêdê siê stara³ dojœæ do g³ównego tematu t³umacz¹c wszystkie elementy
         po drodze, ale jakby od koñca. Przedstawiê najpier koñcow¹ definicjê
         i bêdê w trakcie odwo³ywa³ siê do jej czêœci.
+
+    Short explanation of the practical part (not whole code)
+    Think about structure
+    Keep to main topic of the paragraph
+
     2. Neuron
     3. Model
     4. Network
     5. Layers
     6. MLNN = MLP
     7. Training
-    8. Observations and Conclusions
-
-
+    8. Implementation
+    9. Observations and Conclusions
+   10. References
+        Author, Title, Publication year, Publisher
+        For books: wydanie
+        Articles: antologia
+        URLs: release date

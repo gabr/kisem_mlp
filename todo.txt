@@ -27,3 +27,5 @@ Arkadiusz Gabryœ
         For books: wydanie
         Articles: antologia
         URLs: release date
+
+    List of figures: http://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions

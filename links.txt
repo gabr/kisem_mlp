@@ -2,3 +2,6 @@
 2. http://www.rosczak.com/mlp/mlp.html
 3. http://en.wikipedia.org/wiki/Neuron 
 4. http://en.wikipedia.org/wiki/Multipolar_neuron
+
+Media:
+MultipolarNeuron.png - http://en.wikipedia.org/wiki/File:Blausen_0657_MultipolarNeuron.png

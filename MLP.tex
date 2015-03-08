@@ -8,6 +8,10 @@
 % enable hyperlinks and set its properties
 \usepackage[hidelinks]{hyperref} % http://ctan.org/pkg/hyperref
 
+% separate captions for equations
+\usepackage{caption}
+\DeclareCaptionType{mycapequ}[Equation][List of equations]
+\captionsetup[mycapequ]{labelformat=default}
 
 % margins setup
 \usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}

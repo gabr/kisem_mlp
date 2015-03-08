@@ -3,14 +3,14 @@ Arkadiusz Gabryœ
 
 1. Spis rozdzia³ów:
 
-    1. Abstract - 
+    1. Abstract -
         Mega skoncentrowana treœæ z ca³ego artyku³u. Jak najwiêcej s³ów
         kluczowych. Przedstawienie tezy, metodyki przeprowadzonych badañ,
         najwazniejsze wyniki i wnioski, dlaczego przeprowadzono badania.
         Zwykle od 150 do - 600 s³ów.
 
     2. Introduction
-	Motivation, overview (why/how it's structure this way)
+        Motivation, overview (why/how it's structure this way)
 
         Bêdê siê stara³ dojœæ do g³ównego tematu t³umacz¹c wszystkie elementy
         po drodze, ale jakby od koñca. Przedstawiê najpier koñcow¹ definicjê
@@ -21,7 +21,7 @@ Arkadiusz Gabryœ
     Keep to main topic of the paragraph
 
     3. Neuron
-    3.1. Cell 
+    3.1. Cell
     3.2. Model
     4. Network
     4.1. Layers

@@ -9,7 +9,7 @@
     \label{fig:MultipolarNeuronCell}
 \end{figure}
 
-Without going into a details. There exist a few type of neural cell. In our mathematical model we use \textit{Multipolar neural cell} which is shown on \hyperref[fig:MultipolarNeuron]{Figure \ref{fig:MultipolarNeuron}}. This one constitute the majority of neurons in the brain and include motor neurons and interneurons.
+Without going into a details. There exist a few type of neural cell. In our mathematical model we use \textit{Multipolar neural cell} which is shown on \hyperref[fig:MultipolarNeuronCell]{Figure \ref{fig:MultipolarNeuronCell}}. This one constitute the majority of neurons in the brain and include motor neurons and interneurons.
 
 The way it works is such that it gather input signals through \textit{dendrites} and produce one output signal through \textit{axon}. The input signals are sum by \textit{nucleus} and only if specific value is obtains the \textit{axon} is activated. Both input and output signal are also modified while they are transmitted to \textit{nucleus} or next cell. Modification depends on \textit{nucleus} and thickness of \textit{neurolemma (which is not shown on the figure)}. This signal changing part is a place where the \textit{neurons network} knowledge is contained.
 
@@ -28,9 +28,16 @@ Such \textit{multipolar neuron cell} mechanism can be easily model. Each \textit
 \begin{mycapequ}[!ht]
     $$f\left(\sum\limits_{i=1}^n x_iw_i\right) = y$$
     \caption{Basic neuron/perceptron model}
-    \label{formula:neuron}
+    \label{formula:NeuronMathModelEquation}
 \end{mycapequ}
 
 Most part of the model is simple and obvious yet the \textit{activation function} need to be discuss in more details.
 
-\textit{Activation function} may take various forms. It all depends on the output we want to obtain and/or the problem specification. 
+\textit{Activation function} may take various form - from simple identity function to step function or more complicated continuous functions. It all depends on the output we want to obtain and/or the problem specification. In today's applications mostly sigmoidal continuous functions are used:
+
+\begin{mycapequ}[!ht]
+    $$y = sgm(x) = \frac{1}{1+e^{-\lambda s}}$$
+    \caption{Sigmoidal continous activation function}
+    \label{formula:SigmoidalActivationFunction}
+\end{mycapequ}
+

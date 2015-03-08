@@ -23,7 +23,13 @@ The way it works is such that it gather input signals through \textit{dendrites}
     \label{fig:NeuronModel}
 \end{figure}
 
-Such \textit{multipolar neuron cell} mechanism can be easily model. Each \textit{neuron} input is represented by $x_n$ and multiply by corresponding factors $w_n$ which represents change in \textit{neuron} input signal. All signals are sum (that represents \textit{nucleus} function) and then processed by the \textit{activation function} (which is representation of the active or inactive \textit{axon} and also serves other purposes - more about that later in this chapter).
+Such \textit{multipolar neuron cell} mechanism can be easily model. Each \textit{neuron} input is represented by $x_n$ and multiply by corresponding factors $w_n$ (1) which represents change in \textit{neuron} input signal. All signals are sum (2) (that represents \textit{nucleus} function) and then processed by the \textit{activation function} (3) (which is representation of the active or inactive \textit{axon} and also serves other purposes - more about that later in this chapter).
+
+\begin{eqnarray}
+x_n \times w_n &=& \Delta_n \\
+\sum\limits_{i=1}^n \Delta_i &=& \Sigma \\
+f(\Sigma) &=& y
+\end{eqnarray}
 
 \begin{mycapequ}[!ht]
     $$f\left(\sum\limits_{i=1}^n x_iw_i\right) = y$$
@@ -41,11 +47,11 @@ Most part of the model is simple and obvious yet the \textit{activation function
     \label{formula:SigmoidalActivationFunction}
 \end{mycapequ}
 
-Opis wzoru
+Most of \textit{activation functions} are more or less similar. The $x$ is the sum calculated by neuron in step (2). On $\lambda$ depends slope of the function, in many cases this factor is omitted.
 
 \begin{figure}[!h]
     \centering
-    \includegraphics[scale=0.6]{Media/sgm_graph.png}
+    \includegraphics[scale=1]{Media/sgm_graph.png}
     \caption{Sigmoidal activation function graph}
     \label{fig:SigmoidalFunctionGraph}
 \end{figure}

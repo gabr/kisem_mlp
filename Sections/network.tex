@@ -5,16 +5,16 @@ For one neuron there is one output value so we can easily see that one is not en
 \begin{wrapfigure}{r}{0.3\textwidth}
     \includegraphics[width=0.32\textwidth]{Media/Plane.png}
     \caption{Single neuron plane}
-    \label{fig:Plane}
+    \label{fig:SingleNeuronPlane}
 \end{wrapfigure}
 
 Typically each neuron has one constant input value. If we try to show graphical interpretation of neuron it will become clear why and also what class of problems can be solve with one neuron only.
 
-Consider a neuron with two inputs $n = 2$ and with random weights $w_n$. So we have three axis, two for input data and one to show neuron output.
+Consider a neuron with three inputs $n = 3$ and with random weights $w_n$. So we have four axis, three for input data and one to show neuron output. Without one constant input graph of such neuron would be just a random set of points in 4D space.
 
-Without one constant input graph of such neuron would be just a random set of points in 3D space. But if we set one of the inputs constant we will obtain a 3D plane.
+But if we set one of the inputs constant then we will have only three axis, two for data and one for output value. Because of this one constant input instead of set of random points we will obtain 3D plane (\hyperref[fig:SingleNeuronPlane]{Figure \ref{fig:SingleNeuronPlane}}).
 
-
+So our single neuron is able to model a $n$D planes. Such plane allows us to distinguish between three possibilities: data are greater then model, smaller or equal. It is enough to solve all linearly separable problems (e.g. logical AND, OR functions). But not all of the problems are linearly separable.
 
 
 \subsection{Layers}

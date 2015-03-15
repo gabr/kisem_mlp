@@ -36,8 +36,6 @@ There are no differences between just using three separate neurons with differen
 
 \subsection{MLNN/PLP}
 
-Non linearly separable problems can be solve by connecting multiple layers of neurons.
-
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=0.2]{Media/MLN.png}
@@ -45,4 +43,36 @@ Non linearly separable problems can be solve by connecting multiple layers of ne
     \label{fig:MLN}
 \end{figure}
 
+Non linearly separable problems can be solve by connecting multiple layers of neurons. \hyperref[fig:MLN]{Figure \ref{fig:MLN}} shows the simplest possible structure of \textit{Multilayer Perceptron}. Such structure is called \textit{Multilayer perceptron} or \textit{Feedforward neural network} or just \textit{Multilayer neural network}.
+
+\textit{Feedforward neural network} is in our case the best naming convention because it tells exactly how each layer is connected. \textit{Feedforward} means that each output signal is connected only to next layer input. So no recursive connections, loops etc. Such network structure is most popular because we now how to train neurons in that structure. More about that in next \hyperref[sec:Training]{section}.
+
+In general each multilayer network can be divided into three parts:
+\begin{itemize}
+    \item Input layer - used to prepare input data for network e.g. scaling or changing data distribution;
+    \item Hidden layers - actual \textit{feedforward network} with neurons; 
+    \item Output layer - provides output data, can do some additional output preparation e.g. rescaling, swapping data;
+\end{itemize}
+
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \includegraphics[width=0.32\textwidth]{Media/Bridge.png}
+    \caption{Graph of three neurons combined in two layer structure}
+    \label{fig:BridgeGraph}
+\end{wrapfigure}
+
+\textit{Input layer} is in many cases omitted as well as \textit{output layer}.
+
+The most important \textit{hidden layer} in \textit{feedforward network} has only one rule: \textit{connect output from $m$ layer to $m+1$ layer}. Not all of the output has to be connected to all neurons in next layer but this is usually the case. Still each of the neurons has to have its one constant input.
+
+Graph of such network (\hyperref[fig:BridgeGraph]{figure \ref{fig:BridgeGraph}}) will show why non linearly separable problems now can be model by such network.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.8]{Media/SolutionGraph.png}
+    \caption{Complicated model modeled by MLP}
+    \label{fig:SolutionGraph}
+\end{figure}
+
+\newpage
 \subsection{Training}
+\label{sec:Training}

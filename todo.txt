@@ -16,6 +16,8 @@ Arkadiusz Gabryœ
         po drodze, ale jakby od koñca. Przedstawiê najpier koñcow¹ definicjê
         i bêdê w trakcie odwo³ywa³ siê do jej czêœci.
 
+        Nie jednak tak nie robiê.
+
     Short explanation of the practical part (not whole code)
     Think about structure
     Keep to main topic of the paragraph

@@ -47,18 +47,18 @@ Non linearly separable problems can be solve by connecting multiple layers of ne
 
 \textit{Feedforward neural network} is in our case the best naming convention because it tells exactly how each layer is connected. \textit{Feedforward} means that each output signal is connected only to next layer input. So no recursive connections, loops etc. Such network structure is most popular because we now how to train neurons in that structure. More about that in next \hyperref[sec:Training]{section}.
 
+\begin{wrapfigure}[14]{r}{0.3\textwidth}
+    \includegraphics[width=0.32\textwidth]{Media/Bridge.png}
+    \caption{Graph of three neurons combined in two layer structure}
+    \label{fig:BridgeGraph}
+\end{wrapfigure}
+
 In general each multilayer network can be divided into three parts:
 \begin{itemize}
     \item Input layer - used to prepare input data for network e.g. scaling or changing data distribution;
     \item Hidden layers - actual \textit{feedforward network} with neurons; 
     \item Output layer - provides output data, can do some additional output preparation e.g. rescaling, swapping data;
 \end{itemize}
-
-\begin{wrapfigure}{r}{0.3\textwidth}
-    \includegraphics[width=0.32\textwidth]{Media/Bridge.png}
-    \caption{Graph of three neurons combined in two layer structure}
-    \label{fig:BridgeGraph}
-\end{wrapfigure}
 
 \textit{Input layer} is in many cases omitted as well as \textit{output layer}.
 
@@ -76,3 +76,5 @@ Graph of such network (\hyperref[fig:BridgeGraph]{figure \ref{fig:BridgeGraph}})
 \newpage
 \subsection{Training}
 \label{sec:Training}
+
+Training of multilayer network is numerical optimization of goal function. 

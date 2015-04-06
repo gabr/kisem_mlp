@@ -19,17 +19,17 @@ User interface presents the network structure.
 
 Elements of interface:
 \begin{enumerate}[topsep=8pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-    \item File menu - save and open network configuration with training data
-    \item Random weight - set random values for neurons weights
+    \item \label{FileMenu} File menu - save and open network configuration with training data
+    \item \label{RandomWeight} Random weight - set random values for neurons weights
     \item Calculate - calculate network output for given input values (8)
-    \item Training data - first two values are network inputs third value is desired network output
-    \item Auto train - train network using given Training data
+    \item \label{TrainingData} Training data - first two values are network inputs third value is desired network output
+    \item \label{AutoTrain} Auto train - train network using given Training data
     \item Manual train - perform one iteration of \hyperref[formula:EBP]{EBP algorith} with given input (8) and output given in Result field (7) as training data
     \item Training parameters:
-    \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
-        \item Error - desired error value for Auto training (5)
-        \item Max steps - limits number of Auto training iterations
-        \item Train coef - corresponds to \textit{learn factor} $\alpha$
+    \begin{enumerate}[topsep=-1ex,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+        \item \label{Error} Error - desired error value for Auto training (5)
+        \item \label{MaxSteps} Max steps - limits number of Auto training iterations
+        \item \label{TrainCoef} Train coef - corresponds to \textit{learn factor} $\alpha$
         \item Result - desired network output value for Manual training
     \end{enumerate}
     \item Network inputs - used for Manual training (6) and for manual network output calculation (3)
@@ -39,6 +39,7 @@ Elements of interface:
 \textcolor{ForestGreen}{\textbf{Green}} elements are neurons weights, \textcolor{Cerulean}{\textbf{blue}} are multiplication of weights and inputs, \textcolor{red}{\textbf{red}} are neurons outputs.
 
 \subsection{Program structure}
+\label{ProgramStrucutre}
 
 Whole project is accessible on \url{https://github.com/gabr/kisem_xor} \\
 It is based on two classes \textit{XORForm} and \textit{Network}:
@@ -67,3 +68,20 @@ Whole classes structure can be seen on \hyperref[fig:Classes]{Figure \ref{fig:Cl
     \caption{Classes}
     \label{fig:Classes}
 \end{figure}
+
+\newpage
+
+\subsection{Usage}
+\label{Usage}
+
+Usage of program on example of training boolean function XOR:
+\begin{enumerate}[topsep=8pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \item \hyperref[UserInterface]{Open program}
+    \item Set \hyperref[RandomWeight]{random weights}
+    \item Provide true table for XOR function in \hyperref[TrainingData]{training data} window
+    \item Set desired \hyperref[Error]{error} value and \hyperref[MaxSteps]{maximum iterations} value
+    \item Set \hyperref[TrainCoef]{learning factor}
+    \item Press \hyperref[AutoTrain]{Auto Train} button
+\end{enumerate}
+
+The resulted calculated weights can be saved using \hyperref[FileMenu]{File menu} \textit{File $\rightarrow$ Save as}.

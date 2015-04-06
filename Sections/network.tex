@@ -87,5 +87,9 @@ Training of multilayer network is numerical optimization of goal function $Q(k)$
 \end{mycapequ}
 
 Using this formula we will for each iteration $k$ modify previous weight ${w_i}^{(n)}(k-1)$ of $i$ neuron in $n$ layer by negative gradient $\displaystyle{\alpha\frac{\partial Q(k)}{{w_i}^{(n)}}}$ where $\alpha$ is \textit{learn factor} (determine \textit{speed} of learning).
+Goal function $Q(k)$ is usually square of the network result error.
 
-Goal function $Q(k)$ 
+\ 
+
+
+To know network error the sample set with both inputs and results is needed. Such form of network training is called supervised. Creating good sample set is a very large topic and wont be discussed here.

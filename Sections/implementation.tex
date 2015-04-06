@@ -1,10 +1,12 @@
 \section{Implementation}
+\label{Implementation}
 
 In this section will be presented simple $C\#$ program as an example implementation of presented topics.
 By design it implements the simplest multilayer network with two inputs and one output to model boolean functions.
 Program is capable to learn non linearly separable XOR function and show this process.
 
 \subsection{User interface}
+\label{UserInterface}
 
 User interface presents the network structure.
 
@@ -33,6 +35,35 @@ Elements of interface:
     \item Network inputs - used for Manual training (6) and for manual network output calculation (3)
     \item Network output - calculated when button Calculate is pressed (3)
 \end{enumerate}
+
 \textcolor{ForestGreen}{\textbf{Green}} elements are neurons weights, \textcolor{Cerulean}{\textbf{blue}} are multiplication of weights and inputs, \textcolor{red}{\textbf{red}} are neurons outputs.
 
 \subsection{Program structure}
+
+Whole project is accessible on \url{https://github.com/gabr/kisem_xor} \\
+It is based on two classes \textit{XORForm} and \textit{Network}:
+
+\begin{itemize}[topsep=1pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \item \textit{XORForm}:
+    \begin{itemize}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+        \item Implements \hyperref[UserInterface]{User interface} actions
+        \item Contains \textit{Network} class 
+    \end{itemize}
+    \item \textit{Network}:
+    \begin{itemize}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+        \item Contains all neurons weights $w$, inputs $u$ and it sum of weighted inputs~$S$
+        \item Properties \textit{Inputs} and \textit{Output} gives access to \hyperref[InputLayer]{first} and \hyperref[OutputLayer]{last} layer of network
+        \item \textit{\_connections} is a list of tuples where one tuple represents one connection between neurons
+        \item \textit{\_rand} is a object used to generate random values of weights
+        \item Methods implements \hyperref[UserInterface]{User interface} actions and the \textit{Train()} method implements \hyperref[formula:EBP]{EBP algorith}
+    \end{itemize}
+\end{itemize}
+
+Whole classes structure can be seen on \hyperref[fig:Classes]{Figure \ref{fig:Classes}}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=1]{Media/Class.png}
+    \caption{Classes}
+    \label{fig:Classes}
+\end{figure}

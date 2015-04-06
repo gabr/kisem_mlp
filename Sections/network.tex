@@ -78,6 +78,14 @@ Graph of such network (\hyperref[fig:BridgeGraph]{figure \ref{fig:BridgeGraph}})
 \label{sec:Training}
 
 Now the EBP\textit{(Error Back Propagation)} algorithm will be discussed.
-Training of multilayer network is numerical optimization of goal function.
-And EBP algorithm in one of the gradient based methods.
+Training of multilayer network is numerical optimization of goal function $Q(k)$ where EBP algorithm in one of the gradient based methods.
 
+\begin{mycapequ}[!ht]
+    $$ {w_i}^{(n)}(k) = {w_i}^{(n)}(k-1)-\alpha\frac{\partial Q(k)}{{w_i}^{(n)}} $$
+    \caption{Error Back Propagation}
+    \label{formula:EBP}
+\end{mycapequ}
+
+Using this formula we will for each iteration $k$ modify previous weight ${w_i}^{(n)}(k-1)$ of $i$ neuron in $n$ layer by negative gradient $\displaystyle{\alpha\frac{\partial Q(k)}{{w_i}^{(n)}}}$ where $\alpha$ is \textit{learn factor} (determine \textit{speed} of learning).
+
+Goal function $Q(k)$ 

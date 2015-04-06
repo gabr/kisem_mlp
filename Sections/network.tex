@@ -62,9 +62,23 @@ In general each multilayer network can be divided into three parts:
 
 \textit{Input layer} is in many cases omitted as well as \textit{output layer}.
 
-The most important \textit{hidden layer} in \textit{feedforward network} has only one rule: \textit{connect output from $m$ layer to $m+1$ layer}. Not all of the output has to be connected to all neurons in next layer but this is usually the case. Still each of the neurons has to have its one constant input.
+The most important \textit{hidden layer} in \textit{feedforward network} has only one rule: \textit{connect output from $m$ layer to $m+1$ layer}. Not all of the output has to be connected to all neurons in next layer but this is usually the case. Still each of the neurons has to have its one constant input. Graph of such network (\hyperref[fig:BridgeGraph]{figure \ref{fig:BridgeGraph}}) will show why non linearly separable problems now can be model by such network.
 
-Graph of such network (\hyperref[fig:BridgeGraph]{figure \ref{fig:BridgeGraph}}) will show why non linearly separable problems now can be model by such network.
+\newpage
+Now there is a question how many neurons and layers is needed. \\ There are two simple rules:
+\begin{enumerate}[topsep=8pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \item As small number of layers as possible
+    \item As small number of neurons as possible
+\end{enumerate}
+And there are many approaches to solve this problem:
+\begin{enumerate}[topsep=8pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \item Analytical calculations
+    \item Building network from small number of neurons and measuring results
+    \item Building network from large number of neurons and measuring results
+    \item Generic algorithms
+    \item Using theoretical knowledge about the problem
+\end{enumerate}
+None of this methods will be discussed here.
 
 \begin{figure}[!h]
     \centering
@@ -92,4 +106,4 @@ Goal function $Q(k)$ is usually square of the network result error.
 \ 
 
 
-To know network error the sample set with both inputs and results is needed. Such form of network training is called supervised. Creating good sample set is a very large topic and wont be discussed here.
+To know network error the sample set with both inputs and results is needed. Such form of network training is called supervised. Creating good sample set is a~very large topic and wont be discussed here.

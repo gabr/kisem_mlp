@@ -15,3 +15,22 @@ User interface presents the network structure.
     \label{fig:UI}
 \end{figure}
 
+Elements of interface:
+\begin{enumerate}[topsep=8pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+    \item File menu - save and open network configuration with training data
+    \item Random weight - set random values for neurons weights
+    \item Calculate - calculate network output for given input values (8)
+    \item Training data - first two values are network inputs third value is desired network output
+    \item Auto train - train network using given Training data
+    \item Manual train - perform one iteration of \hyperref[formula:EBP]{EBP algorith} with given input (8) and output given in Result field (7) as training data
+    \item Training parameters:
+    \begin{enumerate}[topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
+        \item Error - desired error value for Auto training (5)
+        \item Max steps - limits number of Auto training iterations
+        \item Train coef - corresponds to \textit{learn factor} $\alpha$
+        \item Result - desired network output value for Manual training
+    \end{enumerate}
+    \item Network inputs - used for Manual training (6) and for manual network output calculation (3)
+    \item Network output - calculated when button Calculate is pressed (3)
+\end{enumerate}
+\textcolor{ForestGreen}{\textbf{Green}} elements are neurons weights, \textcolor{Cerulean}{\textbf{blue}} are multiplication of weights and inputs, \textcolor{red}{\textbf{red}} are neurons outputs.

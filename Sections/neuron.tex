@@ -5,13 +5,13 @@
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=1]{Media/MultipolarNeuron.png}
-    \caption[Multipolar neuron cell]{Multipolar neuron cell \textit{(sizes and shapes vary)}}
+    \caption[Multipolar neuron cell]{Multipolar neuron cell \textit{(sizes and shapes vary)} \cite{neuronPNG}}
     \label{fig:MultipolarNeuronCell}
 \end{figure}
 
-Without going into a details. There exist a few type of neural cell. In our mathematical model we use \textit{Multipolar neural cell} which is shown on \hyperref[fig:MultipolarNeuronCell]{Figure \ref{fig:MultipolarNeuronCell}}. This one constitute the majority of neurons in the brain and include motor neurons and interneurons.
+Without going into a details. There exist a few type of neural cell \cite{manyNeuronVersions}. In our mathematical model we use \textit{Multipolar neural cell} which is shown on \hyperref[fig:MultipolarNeuronCell]{Figure \ref{fig:MultipolarNeuronCell}}. This one constitute the majority of neurons in the brain and include motor neurons and interneurons.
 
-The way it works is such that it gather input signals through \textit{dendrites} and produce one output signal through \textit{axon}. The input signals are sum by \textit{nucleus} and only if specific value is obtains the \textit{axon} is activated. Both input and output signal are also modified while they are transmitted to \textit{nucleus} or next cell. Modification depends on \textit{nucleus} and thickness of \textit{neurolemma (which is not shown on the figure)}. This signal changing part is a place where the \textit{neurons network} knowledge is contained.
+The way it works is such that it gather input signals through \textit{dendrites} and produce one output signal through \textit{axon}. The input signals are sum by \textit{nucleus} and only if specific value is obtains the \textit{axon} is activated. Both input and output signal are also modified while they are transmitted to \textit{nucleus} or next cell. Modification depends on \textit{nucleus} and thickness of \textit{neurolemma (which is not shown on the figure)}. This signal changing part is a place where the \textit{neurons network} knowledge is contained \cite{mlpPawelRosczak}.
 
 \newpage
 \subsection{Model}
@@ -23,7 +23,7 @@ The way it works is such that it gather input signals through \textit{dendrites}
     \label{fig:NeuronModel}
 \end{figure}
 
-Such \textit{multipolar neuron cell} mechanism can be easily model. Each \textit{neuron} input is represented by $x_n$ and multiply by corresponding factors $w_n$ (1) which represents change in \textit{neuron} input signal. All signals are sum (2) (that represents \textit{nucleus} function) and then processed by the \textit{activation function} (3) (which is representation of the active or inactive \textit{axon} and also serves other purposes - more about that later in this chapter).
+Such \textit{multipolar neuron cell} mechanism can be easily model\cite{sRpNAI369}. Each \textit{neuron} input is represented by $x_n$ and multiply by corresponding factors $w_n$ (1) which represents change in \textit{neuron} input signal. All signals are sum (2) (that represents \textit{nucleus} function) and then processed by the \textit{activation function} (3) (which is representation of the active or inactive \textit{axon} and also serves other purposes - more about that later in this chapter).
 
 \begin{eqnarray}
 x_n \times w_n &=& \Delta_n \\
@@ -43,7 +43,7 @@ Most part of the model is simple and obvious yet the \textit{activation function
 
 \begin{mycapequ}[!ht]
     $$y = sgm(x) = \frac{1}{1+e^{-\lambda s}}$$
-    \caption{Sigmoidal activation function}
+    \caption{Sigmoidal activation function \cite{mlpFSaC}}
     \label{formula:SigmoidalActivationFunction}
 \end{mycapequ}
 

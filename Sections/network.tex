@@ -53,7 +53,7 @@ Non linearly separable problems can be solve by connecting multiple layers of ne
     \label{fig:BridgeGraph}
 \end{wrapfigure}
 
-In general each multilayer network can be divided into three parts:
+In general each multilayer network can be divided into three parts \cite{mlpPawelRosczak,mlpFSaC,fsmlpDwrSkrMk}:
 \begin{itemize}
     \item \label{InputLayer} Input layer - used to prepare input data for network e.g. scaling or changing data distribution;
     \item \label{HiddenLayer} Hidden layers - actual \textit{feedforward network} with neurons; 
@@ -65,7 +65,7 @@ In general each multilayer network can be divided into three parts:
 The most important \textit{hidden layer} in \textit{feedforward network} has only one rule: \textit{connect output from $m$ layer to $m+1$ layer}. Not all of the output has to be connected to all neurons in next layer but this is usually the case. Still each of the neurons has to have its one constant input. Graph of such network (\hyperref[fig:BridgeGraph]{figure \ref{fig:BridgeGraph}}) will show why non linearly separable problems now can be model by such network.
 
 \newpage
-Now there is a question how many neurons and layers is needed. \\ There are two simple rules:
+Now there is a question how many neurons and layers is needed. \\ There are two simple rules \cite{mlpPawelRosczak}:
 \begin{enumerate}[topsep=8pt,itemsep=-1ex,partopsep=1ex,parsep=1ex]
     \item As small number of layers as possible
     \item As small number of neurons as possible
@@ -91,12 +91,12 @@ None of this methods will be discussed here.
 \subsection{Training}
 \label{sec:Training}
 
-Now the EBP\textit{(Error Back Propagation)} algorithm will be discussed.
+Now the EBP\textit{(Error Back Propagation)} algorithm will be discussed \cite{mlpPawelRosczak,mlpFSaC,fsmlpDwrSkrMk,sRpNAI369}.
 Training of multilayer network is numerical optimization of goal function $Q(k)$ where EBP algorithm in one of the gradient based methods.
 
 \begin{mycapequ}[!ht]
     $$ {w_i}^{(n)}(k) = {w_i}^{(n)}(k-1)-\alpha\frac{\partial Q(k)}{{w_i}^{(n)}} $$
-    \caption{Error Back Propagation}
+    \caption{Error Back Propagation \cite{mlpPawelRosczak}}
     \label{formula:EBP}
 \end{mycapequ}
 

@@ -1,6 +1,6 @@
 \section{Network}
 
-For one neuron there is one output value so we can easily see that one is not enough to solve many problems. Combining neurons into networks and layers will make them more useful. But one single neuron is still able to solve some class of problems.
+For one neuron there is one output value so it is not enough to solve many problems. Combining neurons into networks and layers will make them capable to solve complicated problems. One single neuron still can solve some class of problems.
 
 \begin{wrapfigure}{r}{0.3\textwidth}
     \includegraphics[width=0.32\textwidth]{Media/Plane.png}
@@ -21,7 +21,7 @@ So our single neuron is able to model a $n$D planes. Such plane allows us to dis
 
 Before solving non linearly separable problems it have to be shown how more then one output can be obtain.
 
-By putting same input values into multiple neurons with different set of weights $w_n$ a~more then one output can be obtain. Of course the single constant input still need to be provide for each of the neurons.
+By putting input values into multiple neurons with different set of weights $w_n$ a~more then one output can be obtain. Of course the single constant input still need to be provide for each of the neurons.
 
 There are no differences between just using three separate neurons with different weights. So neurons in such configuration cannot solve problems beyond single neuron capabilities.
 
@@ -39,13 +39,13 @@ There are no differences between just using three separate neurons with differen
 \begin{figure}[!h]
     \centering
     \includegraphics[scale=0.2]{Media/MLN.png}
-    \caption[Multilayer network]{Very simple multilayer network}
+    \caption[Multilayer network]{Simple multilayer network}
     \label{fig:MLN}
 \end{figure}
 
 Non linearly separable problems can be solve by connecting multiple layers of neurons. \hyperref[fig:MLN]{Figure \ref{fig:MLN}} shows the simplest possible structure of \textit{Multilayer Perceptron}. Such structure is called \textit{Multilayer perceptron} or \textit{Feedforward neural network} or just \textit{Multilayer neural network}.
 
-\textit{Feedforward neural network} is in our case the best naming convention because it tells exactly how each layer is connected. \textit{Feedforward} means that each output signal is connected only to next layer input. So no recursive connections, loops etc. Such network structure is most popular because we now how to train neurons in that structure. More about that in next \hyperref[sec:Training]{section}.
+\textit{Feedforward neural network} is in our case the best naming convention because it tells exactly how each layer is connected. \textit{Feedforward} means that each output signal is connected only to next layer input. So no recursive connections, loops etc. Such network structure is most popular because we now how to train neurons in that structure. More in next \hyperref[sec:Training]{section}.
 
 \begin{wrapfigure}[14]{r}{0.3\textwidth}
     \includegraphics[width=0.32\textwidth]{Media/Bridge.png}
@@ -53,7 +53,7 @@ Non linearly separable problems can be solve by connecting multiple layers of ne
     \label{fig:BridgeGraph}
 \end{wrapfigure}
 
-In general each multilayer network can be divided into three parts \cite{mlpPawelRosczak,mlpFSaC,fsmlpDwrSkrMk}:
+In general each multilayer network can be divided into three parts \cite{mlpFSaC,fsmlpDwrSkrMk,mlpPawelRosczak}:
 \begin{itemize}
     \item \label{InputLayer} Input layer - used to prepare input data for network e.g. scaling or changing data distribution;
     \item \label{HiddenLayer} Hidden layers - actual \textit{feedforward network} with neurons; 
@@ -91,7 +91,7 @@ None of this methods will be discussed here.
 \subsection{Training}
 \label{sec:Training}
 
-Now the EBP\textit{(Error Back Propagation)} algorithm will be discussed \cite{mlpPawelRosczak,mlpFSaC,fsmlpDwrSkrMk,sRpNAI369}.
+Now the EBP\textit{(Error Back Propagation)} algorithm will be briefly discussed \cite{sRpNAI369,mlpFSaC,fsmlpDwrSkrMk,mlpPawelRosczak}.
 Training of multilayer network is numerical optimization of goal function $Q(k)$ where EBP algorithm in one of the gradient based methods.
 
 \begin{mycapequ}[!ht]
